@@ -1,0 +1,21 @@
+.calculator {
+  width: var(--width-standard-95);
+  max-width: var(--max-width-standard-90);
+  margin: var(--margin-auto-center);
+}
+
+.visor {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.visor input {
+  font-size: 24px;
+}
+
+.calculator .middle button {
+  min-height: 150px;
+}
+
+.calculator .middle button:last-child {
+  background-color: #f70;
+}

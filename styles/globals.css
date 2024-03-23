@@ -1,0 +1,12 @@
+:root {
+  --width-standard-93: 93%;
+  --width-standard-95: 95%;
+  --width-standard-97: 97%;
+  --max-width-standard-90: 900px;
+  --margin-auto-center: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
