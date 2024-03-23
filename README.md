@@ -1,6 +1,24 @@
-# Calculadora (ReactJs)
+
+<h1>Calculadora (ReactJs) <img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20CONSTRU%C3%87%C3%83O&color=GREEN&style=for-the-badge" width="200" /></h1>
 
 Projeto de calculadora em React para fins didáticos e exibição de conhecimentos práticos.
+
+<div class="social" align="left">
+    <a href="https://egbsdev.com.br">
+      <img width="100px" src="portfolio.svg" alt="Click to see the source" />
+    </a>
+    <img width="3px" alt="" />
+    <a href="https://www.linkedin.com/in/ednaldocaetanoguedes">
+      <img src="/icons/linkedin-svgrepo-com.svg" height="35px" alt="Linkedin" />
+    </a>
+    <img width="3px" alt="" />
+    <a href="https://www.instagram.com/ednaldocaetanoguedes">
+      <img src="/icons/instagram-svgrepo-com.svg" height="30px" alt="Instagram" />
+    </a>
+  </div>
+
+Autor <a href="https://github.com/edcaetanoguedes">Ednaldo Guedes</a>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=calculator" />
 
 ## Pré-requisitos
 
@@ -13,7 +31,7 @@ Projeto de calculadora em React para fins didáticos e exibição de conheciment
 
 #### Para executar este projeto em ambiente de desenvolvimento siga os seguintes passos:
 
-Obs: Implantação via Git CLI.
+Obs: Implantação via Githut CLI.
 
 - Já posicionado no diretório desejado (exemplo: /documentos/projetos).
 - Clone o repositório `git clone https://github.com/edcaetanoguedes/calculator.git`.
@@ -24,8 +42,17 @@ Obs: Implantação via Git CLI.
 
 ## Construído com
 
-- React: Biblioteca usada.
-- NextJs: Framework usado.
+<div class="languages" align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="40" alt="react logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="next js logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="VsCode logo" />
+</div>
 
 ## Versão
 
