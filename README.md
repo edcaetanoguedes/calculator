@@ -1,40 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Calculadora (ReactJs)
 
-## Getting Started
+Projeto de calculadora em React para fins didáticos e exibição de conhecimentos práticos.
 
-First, run the development server:
+## Pré-requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Ambiente de desenvolvimento pré-configurado (neste caso, o VS Code).
+- Node instalado.
+- Conta Github.
+- Conta Vercel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalação
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Para executar este projeto em ambiente de desenvolvimento siga os seguintes passos:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Obs: Implantação via Git CLI.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Já posicionado no diretório desejado (exemplo: /documentos/projetos).
+- Clone o repositório `git clone https://github.com/edcaetanoguedes/calculator.git`.
+- Acesse a pasta do repósitorio `cd [nome-do-repositorio]`.
+- Execute `npm run dev`.
+- Por padrão, a execução é direcionado para `http://localhost:3000`.
+- Bom proveito!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Construído com
 
-## Learn More
+- React: Biblioteca usada.
+- NextJs: Framework usado.
 
-To learn more about Next.js, take a look at the following resources:
+## Versão
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para o controle de versão foi utilizado o Github e para deploy do projeto Vercel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Autores
 
-## Deploy on Vercel
+Este é um projeto inteiramente projetado por [Ednaldo Guedes](https://github.com/edcaetanoguedes).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está sob licensa MIT - veja o arquivo [LICENSE.md](https://github.com/edcaetanoguedes/calculator/license)
+
+## Agradecimentos
+
+- Gostou do projeto? Achou legal? Peça a gentileza de dar uma estrela no projeto, um comentário. Assim poderei ter métricas de relevância do projeto.
+
+- Qualquer pessoa interessada no projeto, faça bom uso. Seja para estudo, prática ou curiosidade mesmo.
+
+- Tem um projeto legal em mente e precisa de ajuda? Chama! Quem sabe não trabalhamos juntos.
