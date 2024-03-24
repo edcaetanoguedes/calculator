@@ -1,6 +1,8 @@
+import styles from "@/styles/Layout.module.css";
+
 export default function Main({ children }) {
   return (
-    <main>
+    <main className={styles.main}>
       {children}
     </main>
   )
