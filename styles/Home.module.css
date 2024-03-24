@@ -1,5 +1,5 @@
 .calculator {
-  width: var(--width-standard-95);
+  width: var(--width-standard-90);
   max-width: var(--max-width-standard-90);
   margin: var(--margin-auto-center);
 }
@@ -9,13 +9,52 @@
 }
 
 .visor input {
+  font-size: 36px;
+  text-align: right;
+  color: #f50;
+  border: none;
+  background-color: transparent;
+}
+
+.visor .expression {
   font-size: 24px;
 }
 
-.calculator .middle button {
-  min-height: 150px;
+.visor .result {
+  font-size: 42px;
 }
 
-.calculator .middle button:last-child {
+.calculator .middle,
+.calculator .middle>.content {
+  min-height: 100%;
+  border-top: 1px solid #f503;
+}
+
+.calculator .middle>.content {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator .middle button {
+  height: calc(80vw/5);
+  color: #fff;
+  border: none;
+  background-color: #0000;
+}
+
+.calculator .middle button:hover {
+  background-color: #fff2;
+}
+
+.calculator .middle button.symbol {
+  font-size: 24px;
+  color: #f50;
+}
+
+.calculator .middle button.calculate {
+  color: #fff;
   background-color: #f70;
+}
+
+.calculator .middle button.calculate:hover {
+  background-color: #f90;
 }

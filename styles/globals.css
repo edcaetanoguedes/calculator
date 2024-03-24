@@ -6,6 +6,28 @@
   --margin-auto-center: 0 auto;
 }
 
+body,
+body * {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 5vh;
+}
+
+main {
+  height: 85vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+.layout {
+  background-color: #333;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

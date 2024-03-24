@@ -4,8 +4,39 @@ import Layout from "@/assets/js/layout";
 import { useState } from "react";
 
 export default function Home() {
-  const [expression, setExpression] = useState(null);
+  const [expression, setExpression] = useState("");
+  const [expression_math, setExpressionMath] = useState(null);
   const [result, setResult] = useState(null);
+
+  function clickNumber(n) {
+    setExpression(expression + n);
+    setResult("");
+  }
+
+  function clickSymbol(s) {
+    setExpression(expression + s);
+    setResult("");
+  }
+
+  function deleteExpression() {
+    setExpression("");
+    setResult("");
+  }
+
+  function backspaceExpression() {
+    let e = expression.toString().substring(0, expression.toString().length - 1);
+    setExpression(e);
+    setResult("");
+  }
+
+  function calculate() {
+    if (expression && expression.length > 0) {
+      try {
+        let c = eval(expression);
+        setResult(c)
+      } catch (err) { }
+    }
+  }
 
   return (
     <Layout>
@@ -20,32 +51,32 @@ export default function Home() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={`${styles.visor} grid`}>
-              <input type="text" value={expression} readOnly />
-              <input type="text" value={result} readOnly />
+              <input className={styles.expression} type="text" value={expression} />
+              <input className={styles.result} type="text" value={result} />
             </div>
           </div>
 
           <div className={styles.middle}>
             <div className={`grid ${styles.content}`}>
-              <button>AC</button>
-              <button>Delete</button>
-              <button>%</button>
-              <button>/</button>
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>X</button>
-              <button>4</button>
-              <button>5</button>
-              <button>6</button>
-              <button>-</button>
-              <button>7</button>
-              <button>8</button>
-              <button>9</button>
-              <button>+</button>
-              <button>0</button>
-              <button>,</button>
-              <button>=</button>
+              <button className={styles.symbol} onClick={deleteExpression}>AC</button>
+              <button className={styles.symbol} onClick={backspaceExpression}>Delete</button>
+              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>%</button>
+              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>/</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>1</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>2</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>3</button>
+              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>x</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>4</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>5</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>6</button>
+              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>-</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>7</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>8</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>9</button>
+              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>+</button>
+              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>0</button>
+              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>,</button>
+              <button className={`${styles.symbol} ${styles.calculate}`} onClick={calculate}>=</button>
             </div>
           </div>
 
