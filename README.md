@@ -21,6 +21,18 @@ Projeto de calculadora em React para fins didáticos e exibição de conheciment
 Autor <a href="https://github.com/edcaetanoguedes">Ednaldo Guedes</a>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=calculator" />
 
+## Estágios do projeto
+
+- Modelagem inicial do projeto.
+  - Limpeza de código desnecessário e configurações iniciais necessárias.
+  - O projeto será inicialmente projetado para uma única página.
+- Construção dos componentes básicos do projeto.
+  - Normalmente, divido o layout em 3 macro componentes/arquivos (header.js, main.js, footer.js). Então o arquivo layout.js passa à conter os 3. Isso facilita manutenção de código.
+- Implementação de funcionalidades básicas.
+  - Operações matemáticas básicas (adição, subtração, multiplicação e divisão)
+- Aprimoramento de layout [estágio atual]().
+  - Teste de paleta de cores.
+
 ## Pré-requisitos
 
 - Ambiente de desenvolvimento pré-configurado (neste caso, o VS Code).
