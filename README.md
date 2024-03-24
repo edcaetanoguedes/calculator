@@ -2,6 +2,7 @@
 <h1>Calculadora (ReactJs) <img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20CONSTRU%C3%87%C3%83O&color=GREEN&style=for-the-badge" width="200" /></h1>
 
 Projeto de calculadora em React para fins didáticos e exibição de conhecimentos práticos.
+[Clique aqui](https://reactjs-calculator.vercel.app/) para ver o projeto implementado.
 
 <div class="social" align="left">
     <a href="https://egbsdev.com.br">
