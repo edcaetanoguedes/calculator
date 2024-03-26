@@ -17,17 +17,13 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-header {
-  min-height: 5vh;
-}
+header {}
 
 main {
-  min-height: 85vh;
+  min-height: 100vh;
 }
 
-footer {
-  min-height: 10vh;
-}
+footer {}
 
 .layout {
   background-color: #333;

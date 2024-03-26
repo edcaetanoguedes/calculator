@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+
+  padding-top: 10px;
 }
 
 .visor {
@@ -16,7 +18,8 @@
 .visor .result {
   text-align: right;
   color: #f50;
-  min-height: 30px;
+  min-height: 50px;
+  padding: 0 10px;
 }
 
 .visor .expression {
@@ -25,6 +28,7 @@
 
 .visor .result {
   font-size: 42px;
+  min-height: 70px;
 }
 
 .calculator .middle {}
@@ -80,7 +84,5 @@
   .calculator {
     width: var(--width-standard-90);
     max-width: var(--max-width-standard-90);
-    margin: var(--margin-auto-center);
-
   }
 }
