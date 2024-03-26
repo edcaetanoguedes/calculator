@@ -1,37 +1,42 @@
-
-<h1>Calculadora (ReactJs) <img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20CONSTRU%C3%87%C3%83O&color=GREEN&style=for-the-badge" width="200" /></h1>
-
-Projeto de calculadora em React para fins didáticos e exibição de conhecimentos práticos.
+<h1>Calculadora (ReactJs) <img
+    src="https://img.shields.io/static/v1?label=STATUS&message=EM%20CONSTRU%C3%87%C3%83O&color=GREEN&style=for-the-badge"
+    width="200" /></h1>
 
 <div class="production" align="left">
-  <p><a href="https://reactjs-calculator.vercel.app/">Clique aqui</a> para ver o projeto.</p>
+  <p>Projeto de calculadora em React para fins didáticos e exibição de conhecimentos práticos. Para ver o estágio do
+    projeto <a href="https://reactjs-calculator.vercel.app/">Clique aqui</a>!</p>
+</div>
+
+<div class="author">
+  <p>Autor <a href="https://github.com/edcaetanoguedes">Ednaldo Guedes</a>
+  </p>
 </div>
 
 <div class="social" align="left">
-    <img width="3px" alt="" />
-    <a href="https://www.linkedin.com/in/ednaldocaetanoguedes">
-      <img src="/icons/linkedin-svgrepo-com.svg" height="35px" alt="Linkedin" />
-    </a>
-    <img width="3px" alt="" />
-    <a href="https://www.instagram.com/ednaldocaetanoguedes">
-      <img src="/icons/instagram-svgrepo-com.svg" height="30px" alt="Instagram" />
-    </a>
-  </div>
-
-Autor <a href="https://github.com/edcaetanoguedes">Ednaldo Guedes</a>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=calculator" />
+  <img width="3px" alt="" />
+  <a href="https://www.linkedin.com/in/ednaldocaetanoguedes">
+    <img src="./public//icons/linkedin-svgrepo-com.svg" height="32px" alt="Linkedin" />
+  </a>
+  <img width="3px" alt="" />
+  <a href="https://www.instagram.com/ednaldocaetanoguedes">
+    <img src="./public/icons/instagram-svgrepo-com.svg" height="32px" alt="Instagram" />
+  </a>
+  <img width="3px" alt="" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=calculator" />
+</div>
 
 ## Estágios do projeto
 
 - Modelagem inicial do projeto.
-  - Limpeza de código desnecessário e configurações iniciais necessárias.
-  - O projeto será inicialmente projetado para uma única página.
+- Limpeza de código desnecessário e configurações iniciais necessárias.
+- O projeto será inicialmente projetado para uma única página.
 - Construção dos componentes básicos do projeto.
-  - Normalmente, divido o layout em 3 macro componentes/arquivos (header.js, main.js, footer.js). Então o arquivo layout.js passa à conter os 3. Isso facilita manutenção de código.
+- Normalmente, divido o layout em 3 macro componentes/arquivos (header.js, main.js, footer.js). Então o arquivo
+layout.js passa à conter os 3. Isso facilita manutenção de código.
 - Implementação de funcionalidades básicas.
-  - Operações matemáticas básicas (adição, subtração, multiplicação e divisão)
+- Operações matemáticas básicas (adição, subtração, multiplicação e divisão)
 - Aprimoramento de layout [estágio atual]().
-  - Teste de paleta de cores.
+- Teste de paleta de cores.
 
 ## Pré-requisitos
 
@@ -56,15 +61,19 @@ Obs: Implantação via Githut CLI.
 ## Construído com
 
 <div class="languages" align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40"
+    alt="javascript logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="40" alt="react logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="40"
+    alt="react logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="next js logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40"
+    alt="next js logo" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="VsCode logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40"
+    alt="VsCode logo" />
 </div>
 
 ## Versão
@@ -81,7 +90,8 @@ Este projeto está sob licensa MIT - veja o arquivo [LICENSE.md](https://github.
 
 ## Agradecimentos
 
-- Gostou do projeto? Achou legal? Peça a gentileza de dar uma estrela no projeto, um comentário. Assim poderei ter métricas de relevância do projeto.
+- Gostou do projeto? Achou legal? Peça a gentileza de dar uma estrela no projeto, um comentário. Assim poderei ter
+métricas de relevância do projeto.
 
 - Qualquer pessoa interessada no projeto, faça bom uso. Seja para estudo, prática ou curiosidade mesmo.
 
