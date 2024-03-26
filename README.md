@@ -8,9 +8,6 @@ Projeto de calculadora em React para fins didáticos e exibição de conheciment
 </div>
 
 <div class="social" align="left">
-    <a href="https://egbsdev.com.br">
-      <img width="100px" src="portfolio.svg" alt="Click to see the source" />
-    </a>
     <img width="3px" alt="" />
     <a href="https://www.linkedin.com/in/ednaldocaetanoguedes">
       <img src="/icons/linkedin-svgrepo-com.svg" height="35px" alt="Linkedin" />
