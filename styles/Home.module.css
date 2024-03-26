@@ -1,19 +1,22 @@
 .calculator {
   width: var(--width-standard-90);
-  max-width: var(--max-width-standard-90);
+  max-width: var(--max-width-standard-60);
   margin: var(--margin-auto-center);
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .visor {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.visor input {
-  font-size: 36px;
+.visor .expression,
+.visor .result {
   text-align: right;
   color: #f50;
-  border: none;
-  background-color: transparent;
+  min-height: 30px;
 }
 
 .visor .expression {
@@ -24,21 +27,35 @@
   font-size: 42px;
 }
 
+.calculator .middle {}
+
 .calculator .middle,
 .calculator .middle>.content {
-  min-height: 100%;
   border-top: 1px solid #f503;
 }
 
 .calculator .middle>.content {
+  aspect-ratio: 1 / 1;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .calculator .middle button {
-  height: calc(80vw/5);
+  aspect-ratio: 1 / 1;
+  font-size: 35px;
   color: #fff;
   border: none;
   background-color: #0000;
+}
+
+.calculator .middle button.span2 {
+  grid-column: span 2;
+  aspect-ratio: 2 / 1;
+}
+
+.calculator .middle button icon {
+  width: 35px;
+  height: 35px;
+  user-select: none;
 }
 
 .calculator .middle button:hover {
@@ -46,7 +63,7 @@
 }
 
 .calculator .middle button.symbol {
-  font-size: 24px;
+  font-size: 45px;
   color: #f50;
 }
 
@@ -57,4 +74,13 @@
 
 .calculator .middle button.calculate:hover {
   background-color: #f90;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator {
+    width: var(--width-standard-90);
+    max-width: var(--max-width-standard-90);
+    margin: var(--margin-auto-center);
+
+  }
 }

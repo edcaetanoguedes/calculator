@@ -2,39 +2,55 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Layout from "@/assets/js/layout";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDivide, faEquals, faMinus, faPercent, faPlus, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
-  const [expression, setExpression] = useState("");
-  const [expression_math, setExpressionMath] = useState(null);
+  const [expression, setExpression] = useState([]);
+  const [expression_math, setExpressionMath] = useState("");
   const [result, setResult] = useState(null);
+
+  const ElementVisor = (children) => <div>{children}</div>
+
+  const width_icon = 35;
 
   function clickNumber(n) {
     setExpression(expression + n);
+    setExpressionMath(expression_math + n);
     setResult("");
   }
 
-  function clickSymbol(s) {
-    setExpression(expression + s);
+  function clickSymbol(element) {
+    setExpression(expression + element.value);
+    setExpressionMath(expression_math + element.value);
     setResult("");
   }
 
   function deleteExpression() {
     setExpression("");
+    setExpressionMath("");
     setResult("");
   }
 
   function backspaceExpression() {
     let e = expression.toString().substring(0, expression.toString().length - 1);
     setExpression(e);
+
+    let e_m = expression_math.toString().substring(0, expression_math.toString().length - 1);
+    setExpressionMath(e_m);
+
     setResult("");
   }
 
   function calculate() {
-    if (expression && expression.length > 0) {
+    if (expression_math && expression_math.length > 0) {
+      console.log("expression_math: ", expression_math)
       try {
-        let c = eval(expression);
+        let c = eval(expression_math);
         setResult(c)
-      } catch (err) { }
+      } catch (err) {
+        console.log("ERROR eval()")
+      }
     }
   }
 
@@ -48,40 +64,53 @@ export default function Home() {
       </Head>
 
       <div className={styles.calculator}>
-        <div className={styles.content}>
-          <div className={styles.header}>
-            <div className={`${styles.visor} grid`}>
-              <input className={styles.expression} type="text" value={expression} />
-              <input className={styles.result} type="text" value={result} />
+        <div className={styles.header}>
+          <div className={`${styles.visor} grid`}>
+            <div className={styles.expression}>
+              {expression}
             </div>
+            <div className={styles.result}>{result}</div>
           </div>
-
-          <div className={styles.middle}>
-            <div className={`grid ${styles.content}`}>
-              <button className={styles.symbol} onClick={deleteExpression}>AC</button>
-              <button className={styles.symbol} onClick={backspaceExpression}>Delete</button>
-              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>%</button>
-              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>/</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>1</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>2</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>3</button>
-              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>x</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>4</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>5</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>6</button>
-              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>-</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>7</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>8</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>9</button>
-              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>+</button>
-              <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>0</button>
-              <button className={styles.symbol} onClick={(e) => clickSymbol(e.target.innerText)}>,</button>
-              <button className={`${styles.symbol} ${styles.calculate}`} onClick={calculate}>=</button>
-            </div>
-          </div>
-
-          <div className={styles.footer}></div>
         </div>
+
+        <div className={styles.middle}>
+          <div className={`grid ${styles.content}`}>
+            <button className={styles.symbol} onClick={deleteExpression}>C</button>
+            <button className={`${styles.symbol} ${styles.span2}`} onClick={backspaceExpression}>AC</button>
+            <button className={styles.symbol} onClick={(e) => clickSymbol(e.target)} value="/">
+              {/*<FontAwesomeIcon icon={faDivide} width={width_icon} height={width_icon} />*/}
+              /
+            </button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>1</button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>2</button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>3</button>
+            <button className={styles.symbol} onClick={(e) => clickSymbol(e.target)} value="*">
+              {/*<FontAwesomeIcon icon={faXmark} width={width_icon} height={width_icon} />*/}
+              *
+            </button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>4</button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>5</button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>6</button>
+            <button className={styles.symbol} onClick={(e) => clickSymbol(e.target)} value="-">
+              {/*<FontAwesomeIcon icon={faMinus} width={width_icon} height={width_icon} />*/}
+              -
+            </button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>7</button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>8</button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>9</button>
+            <button className={styles.symbol} onClick={(e) => clickSymbol(e.target)} value="+">
+              {/*<FontAwesomeIcon icon={faPlus} width={width_icon} height={width_icon} />*/}
+              +
+            </button>
+            <button className={styles.symbol} onClick={(e) => clickSymbol(e.target)} value=".">,</button>
+            <button className={styles.number} onClick={(e) => clickNumber(e.target.innerText)}>0</button>
+            <button className={`${styles.symbol} ${styles.calculate} ${styles.span2}`} onClick={calculate}>
+              <FontAwesomeIcon icon={faEquals} width={width_icon} height={width_icon} />
+            </button>
+          </div>
+        </div>
+
+        <div className={styles.footer}></div>
       </div>
     </Layout>
   );

@@ -3,6 +3,7 @@
   --width-standard-95: 95%;
   --width-standard-97: 97%;
   --max-width-standard-90: 900px;
+  --max-width-standard-60: 600px;
   --margin-auto-center: 0 auto;
 }
 
@@ -12,16 +13,20 @@ body * {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 header {
-  height: 5vh;
+  min-height: 5vh;
 }
 
 main {
-  height: 85vh;
+  min-height: 85vh;
 }
 
 footer {
-  height: 10vh;
+  min-height: 10vh;
 }
 
 .layout {
