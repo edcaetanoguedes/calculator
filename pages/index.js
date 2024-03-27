@@ -109,8 +109,6 @@ export default function Home() {
             </button>
           </div>
         </div>
-
-        <div className={styles.footer}></div>
       </div>
     </Layout>
   );
