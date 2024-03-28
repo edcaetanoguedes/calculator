@@ -1,10 +1,17 @@
 <h1>Calculadora (ReactJs) <img
     src="https://img.shields.io/static/v1?label=STATUS&message=EM%20CONSTRU%C3%87%C3%83O&color=GREEN&style=for-the-badge"
-    width="200" /></h1>
+    width="200" />
+</h1>
+
+<div class="metrics" align="left">
+  <img src="https://img.shields.io/github/repo-size/edcaetanoguedes/calculator?style=for-the-badge" />
+  <img src="https://img.shields.io/github/languages/count/edcaetanoguedes/calculator?style=for-the-badge" />
+</div>
 
 <div class="production" align="left">
-  <p>Projeto de calculadora em React para fins didáticos e exibição de conhecimentos práticos. Para ver o estágio do
-    projeto <a href="https://reactjs-calculator.vercel.app/">Clique aqui</a>!</p>
+  <p>Projeto de calculadora em React para fins didáticos e exibição de conhecimentos práticos. Para ver o estágio atual
+    do
+    projeto em produção <a href="https://reactjs-calculator.vercel.app/">Clique aqui</a>!</p>
 </div>
 
 <div class="author">
@@ -35,8 +42,9 @@
 layout.js passa à conter os 3. Isso facilita manutenção de código.
 - Implementação de funcionalidades básicas.
 - Operações matemáticas básicas (adição, subtração, multiplicação e divisão)
-- Aprimoramento de layout [estágio atual]().
+- Implementação do layout responsivo.
 - Teste de paleta de cores.
+- Tratamento de exceção matemáticas [estágio atual].
 
 ## Pré-requisitos
 
@@ -61,11 +69,11 @@ Obs: Implantação via Githut CLI.
 ## Construído com
 
 <div class="languages" align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40"
-    alt="javascript logo" />
-  <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="40"
     alt="react logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40"
+    alt="javascript logo" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40"
     alt="next js logo" />
