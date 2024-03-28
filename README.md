@@ -34,17 +34,22 @@
 
 ## Estágios do projeto
 
-- Modelagem inicial do projeto.
+- [x] Modelagem inicial do projeto.
 - Limpeza de código desnecessário e configurações iniciais necessárias.
 - O projeto será inicialmente projetado para uma única página.
-- Construção dos componentes básicos do projeto.
-- Normalmente, divido o layout em 3 macro componentes/arquivos (header.js, main.js, footer.js). Então o arquivo
+- [x] Construção dos componentes básicos do projeto.
+- Por padrão, divido o layout em 3 macro componentes/arquivos (header.js, main.js, footer.js). Então o arquivo
 layout.js passa à conter os 3. Isso facilita manutenção de código.
-- Implementação de funcionalidades básicas.
+- [x] Implementação de funcionalidades.
 - Operações matemáticas básicas (adição, subtração, multiplicação e divisão)
+- [x] Aprimoramento de layout.
 - Implementação do layout responsivo.
 - Teste de paleta de cores.
-- Tratamento de exceção matemáticas [estágio atual].
+- [ ] Tratamento de exceções matemáticas [[estágio atual]]().
+- [ ] Implementação de funcionalidades.
+- Operações matemáticas (percentual, elevação de expoente, raiz quadrada).
+- [ ] Aprimoramento de layout.
+- Implementação de layout interativo (funções básicas e funções adicionais)
 
 ## Pré-requisitos
 
