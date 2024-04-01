@@ -49,7 +49,8 @@ export default function Home() {
         let c = eval(expression_math);
         setResult(c)
       } catch (err) {
-        console.log("ERROR eval()")
+        console.log("ERROR eval()");
+        alert("Expressão inválida!");
       }
     }
   }
