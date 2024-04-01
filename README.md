@@ -54,9 +54,9 @@ layout.js passa à conter os 3. Isso facilita manutenção de código.
 ## Pré-requisitos
 
 - Ambiente de desenvolvimento pré-configurado (neste caso, o VS Code).
-- Node instalado.
-- Conta Github.
-- Conta Vercel.
+- Node instalado para o ambiente de desenvolvimento.
+- Conta github para uso do Github CLI.
+- Conta Vercel para implementar produção.
 
 ## Instalação
 
