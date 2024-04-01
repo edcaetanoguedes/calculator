@@ -44,6 +44,10 @@ header.header .menu>div {
   align-items: center;
 }
 
+header.header .social .github_icon {
+  color: #fff;
+}
+
 header.header .social img {
   width: 25px;
   margin: 0 3px;

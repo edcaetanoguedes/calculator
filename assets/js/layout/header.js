@@ -26,6 +26,9 @@ export default function Header() {
                 <Link href="https://www.instagram.com/ednaldocaetanoguedes">
                   <Image src="/icons/instagram-svgrepo-com.svg" width={30} height={30} alt="Instagram" />
                 </Link>
+                <Link href="https://github.com/edcaetanoguedes">
+                  <Image alt="Github profile" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" width={30} height={30} />
+                </Link>
               </div>
             </div>
 
@@ -44,6 +47,9 @@ export default function Header() {
             </Link>
             <Link href="https://www.instagram.com/ednaldocaetanoguedes">
               <Image src="/icons/instagram-svgrepo-com.svg" width={30} height={30} alt="Instagram" />
+            </Link>
+            <Link href="https://github.com/edcaetanoguedes">
+              <Image className={styles.github_icon} alt="Github profile" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" width={40} height={40} />
             </Link>
           </div>
         </div>
