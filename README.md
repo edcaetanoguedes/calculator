@@ -1,6 +1,5 @@
 <h1>Calculadora (ReactJs) <img
-    src="https://img.shields.io/static/v1?label=STATUS&message=EM%20CONSTRU%C3%87%C3%83O&color=GREEN&style=for-the-badge"
-    width="200" />
+    src="https://img.shields.io/static/v1?label=STATUS&message=1ª VERSÃO&color=GREEN&style=for-the-badge" width="200" />
 </h1>
 
 <div class="metrics" align="left">
