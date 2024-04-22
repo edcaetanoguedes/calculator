@@ -48,12 +48,19 @@ header.header .social .github_icon {
   color: #fff;
 }
 
-header.header .social img {
+header.header .social img,
+header.header .social svg {
   width: 25px;
   margin: 0 3px;
 }
 
-header.header .social img:hover {
+header.header .social .github img,
+header.header .social .github svg {
+  width: 40px;
+}
+
+header.header .social img:hover,
+header.header .social svg:hover {
   opacity: 0.6;
 }
 
