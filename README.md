@@ -44,7 +44,7 @@ layout.js passa à conter os 3. Isso facilita manutenção de código.
 - [x] Aprimoramento de layout.
 - Implementação do layout responsivo.
 - Teste de paleta de cores.
-- [ ] Tratamento de exceções matemáticas [[estágio atual]]().
+- [ ] [Análise/Relatório da versão 1.0](./docs/reports/version-1.0.md) [estágio atual]
 - [ ] Implementação de funcionalidades.
 - Operações matemáticas (percentual, elevação de expoente, raiz quadrada).
 - [ ] Aprimoramento de layout.
