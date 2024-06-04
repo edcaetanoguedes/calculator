@@ -1,10 +1,7 @@
 <h3>Calculadora (ReactJs)</h3>
 
 ## Relatório da Primeira Versão do Projeto Web de Calculadora
-
-#### Projeto: Calculadora Web
 #### Versão: 1.
-#### Equipe: João Silva, Maria Oliveira, Pedro Santos
 
 ---
 
@@ -17,7 +14,7 @@ A primeira versão do projeto web de calculadora foi desenvolvida com o objetivo
 ### Funcionalidades Implementadas
 
 1. **Interface de Usuário (UI)**
-   - Design simples e intuitivo.
+   - Design simples, intuitivo e responsivo.
    - Teclado numérico virtual para entrada de dados.
    - Display para mostrar a expressão inserida e o resultado.
 
